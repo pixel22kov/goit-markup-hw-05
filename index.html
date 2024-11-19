@@ -526,13 +526,43 @@
             </li>
           </ul>
         </div>
+        <div class="email-wrapper">
+          <form class="subscribe-form">
+            <label class="subscribe-label"
+              >Subscribe
+              <input
+                class="subscribe-input"
+                type="text"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-btn" type="submit">
+              Subscribe<span class="subscribe-part">
+                <a
+                  class="telegram-link"
+                  href="https://www.telegram.com/"
+                  target="_blank"
+                >
+                  <svg class="telegram-icon" width="24" height="20">
+                    <use href=""></use>
+                  </svg>
+                </a>
+              </span>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <div class="modal-overlay">
       <div class="modal-window">
         <form class="modal-form">
-          <button class="close-btn"></button>
+          <button class="close-btn" type="submit">
+            <svg class="" width="" height="">
+              <use href=""></use>
+            </svg>
+          </button>
           <p class="form-main-text">
             Leave your contacts and we will call you back
           </p>
@@ -560,15 +590,20 @@
               </textarea>
             </label>
           </div>
-          <input
-            type="checkbox"
-            class="form-checkbox"
-            name="hobby"
-            value="sports"
-          />
-          <label class="form-label" for="sports"
-            >I accept the terms and conditions of the Privacy Policy</label
-          >
+          <div class="conditions-box">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+            />
+            <label class="form-label" for="user-privacy"
+              >I accept the terms and conditions of the
+              <span class="label-part">Privacy Policy</span>
+            </label>
+          </div>
+          <button class="send-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
