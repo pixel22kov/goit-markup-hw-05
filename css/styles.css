@@ -160,26 +160,28 @@ ol {
     margin-bottom: 48px;
 }
 
-.button-order {
+.button {
     background-color: #4d5ae5;
-    cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    text-align: center;
     color: #fff;
     border-radius: 4px;
     padding: 16px 32px;
     margin: 0 auto;
     display: block;
+    cursor: pointer;
     border: none;
     min-width: 169px;
     height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-order:hover,
-.button-order:focus {
+.button:hover,
+.button:focus {
     background-color: #404BBF;
 }
 
@@ -498,44 +500,38 @@ input::placeholder {
     padding: 8px 16px;
 }
 
-.subscribe-btn{
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #fff;
-    border-radius: 4px;
+.subscribe-button{
     padding: 8px 24px;
     width: 165px;
     height: 40px;
-    background-color: #4d5ae5;
-    border: none;
-    cursor: pointer;
-    display: block;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-overlay{
+.modal-backdrop{
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+}
     opacity: 0;
     transition: opacity 250ms ease;
     pointer-events: none;
 
 
+.modal-overlay.is-open{
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .modal-window{
+    position: absolute;
+    top: 50%;
+    left: 50%;
     background-color: #FCFCFC;
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
                 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -543,21 +539,14 @@ input::placeholder {
     
 }
 
-.close-btn {
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 26px;
     background-color: #e7e9fc;
-    border-radius: 100%;
-    width: 24px;
-    height: 24px;
-    padding: 8px;
-    display: block;
-    border: none;
-    margin-left: auto;
-    margin-top: 5px;
-    margin-bottom: 24px;
-    margin-right: 26px;
 }
 
-.form-main-text{
+.modal-text{
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -566,29 +555,39 @@ input::placeholder {
     margin-bottom: 16px;
 }
 
-.form-wrap{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 13px;
+.modal-form-field{
+    margin-bottom: 9px;
 }
 
-.form-label{
+.modal-form-wrapper{
+    position: relative;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-form-label{
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    margin-bottom: 4px;
 }
 
-.form-input{
+.modal-form-input{
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    width: 360px;
+    width: 100%;
     height: 40px;
+    padding: 8px 38px;
+    outline: transparent;
+}
+
+.modal-form-icon{
+    position: absolute;
+    pointer-events: none;
 }
 
 .conditions-box{
@@ -604,21 +603,3 @@ input::placeholder {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.send-btn{
-    border-radius: 4px;
-    padding: 16px 32px;
-    width: 169px;
-    height: 56px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: #4d5ae5;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #fff;
-    border: none;
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
-}
