@@ -175,13 +175,15 @@ ol {
     cursor: pointer;
     border: none;
     min-width: 169px;
-    height: 56px;
+    min-height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
-.button:focus {
+.button:focus, 
+.subscribe-button:hover,
+.subscribe-button:focus {
     background-color: #404BBF;
 }
 
@@ -477,8 +479,8 @@ ol {
 }
 
 .subscribe-form{
-display: flex;
-justify-content: space-between;
+    display: flex;
+    gap: 24px;
 }
 
 .subscribe-input{
@@ -503,7 +505,22 @@ input::placeholder {
 .subscribe-button{
     padding: 8px 24px;
     width: 165px;
-    min-height: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    display: block;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    gap: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-backdrop{
