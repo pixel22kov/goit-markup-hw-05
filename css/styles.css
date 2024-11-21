@@ -655,7 +655,7 @@ ol {
     border-color: #4d5ae5;
 }
 
-.modal-form-input:focus+.modal-form-icon {
+.modal-form-input:focus + .modal-form-icon {
     fill: #4d5ae5;
 }
 
