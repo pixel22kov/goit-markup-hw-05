@@ -652,10 +652,10 @@ ol {
 }
 
 .modal-form-input:focus{
-    border: 1px solid #4d5ae5;
+    border-color: #4d5ae5;
 }
 
-.modal-form-icon:focus{
+.modal-form-input:focus .modal-form-icon{
     fill: #4D5AE5;
 }
 
