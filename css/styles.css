@@ -648,11 +648,11 @@ ol {
     left: 16px;
     transform: translateY(-50%);
     fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus + .modal-form-icon{
-    fill: #4d5ae5;
-    border: 1px solid #4d5ae5
+.modal-form-input:focus{
+    border: 1px solid #4d5ae5;
 }
 
 .modal-form-area-wrapper{
@@ -671,9 +671,12 @@ ol {
     border-radius: 4px;
     background-color: transparent;
     outline: transparent;
-    color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-textarea::placeholder{
+    color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-form-textarea:focus{
@@ -700,9 +703,16 @@ ol {
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     fill: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+input[type:checkbox]:checked + label > .modal-label-part{
+    border: none;
+    background-color: #404bbf;
+    fill: #F4F4FD;
+}
 .modal-check-link{
     line-height: 1.33;
     text-decoration: underline;
