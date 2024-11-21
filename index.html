@@ -554,10 +554,10 @@
       </div>
     </footer>
 
-    <div class="modal-backdrop">
+    <div class="modal-backdrop is-open">
       <div class="modal-window">
         <button class="close-button" type="button">
-          <svg class="form-icon" width="8" height="8">
+          <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -582,7 +582,7 @@
             <div class="modal-form-wrapper">
               <input
                 class="modal-form-input"
-                type="name"
+                type="text"
                 name="username"
                 id="username"
               />
@@ -605,16 +605,17 @@
               </svg>
             </div>
           </div>
-
-          <label class="modal-form-label" for="">Comment</label>
-          <textarea
-            name="comment"
-            id="comment"
-            rows="5"
-            class="form-input"
-            placeholder="Text input"
-          >
-          </textarea>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="comment">Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              rows="4"
+              class="modal-form-textarea"
+              placeholder="Text input"
+            >
+            </textarea>
+          </div>
 
           <div class="conditions-box">
             <input
@@ -624,9 +625,8 @@
               name="user-privacy"
               value="true"
             />
-            <label class="modal-form-label" for="user-privacy"
-              >I accept the terms and conditions of the
-              <span class="label-part">Privacy Policy</span>
+            <label class="=" for="user-privacy"
+              ><span class="label-part">Privacy Policy</span>
             </label>
           </div>
           <button class="button" type="submit">Send</button>
