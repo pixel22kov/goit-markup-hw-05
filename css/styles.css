@@ -655,8 +655,8 @@ ol {
     border-color: #4d5ae5;
 }
 
-input:focus + .modal-form-icon{
-    fill: #4D5AE5;
+.modal-form-input:focus+.modal-form-icon {
+    fill: #4d5ae5;
 }
 
 .modal-form-area-wrapper{
@@ -678,6 +678,10 @@ input:focus + .modal-form-icon{
     color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-textarea::placeholder{
+    color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-form-textarea:focus{
