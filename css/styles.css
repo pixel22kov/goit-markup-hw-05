@@ -651,8 +651,11 @@ ol {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus + .modal-form-icon{
+.modal-form-input:focus{
     border: 1px solid #4d5ae5;
+}
+
+.modal-form-icon:focus{
     fill: #4D5AE5;
 }
 
