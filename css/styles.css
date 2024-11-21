@@ -655,6 +655,10 @@ ol {
     border: 1px solid #4d5ae5;
 }
 
+.modal-form-input:focus + .modal-form-icon{
+    fill: #4D5AE5;
+}
+
 .modal-form-area-wrapper{
     margin-bottom: 16px;
 }
@@ -671,12 +675,9 @@ ol {
     border-radius: 4px;
     background-color: transparent;
     outline: transparent;
+    color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form-textarea::placeholder{
-    color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-form-textarea:focus{
@@ -708,7 +709,7 @@ ol {
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type:checkbox]:checked + label > .modal-label-part{
+input:checked + label > .modal-label-part{
     border: none;
     background-color: #404bbf;
     fill: #F4F4FD;
