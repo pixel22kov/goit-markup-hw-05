@@ -651,7 +651,8 @@ ol {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus{
+.modal-form-input:focus,
+.modal-form-textarea:focus{
     border-color: #4d5ae5;
 }
 
@@ -682,10 +683,6 @@ ol {
 
 .modal-form-textarea::placeholder{
     color: rgba(46, 47, 66, 0.4);
-}
-
-.modal-form-textarea:focus{
-    border-color: #4D5AE5;
 }
 
 .modal-check-box{
@@ -725,3 +722,6 @@ input[type="checkbox"]:checked + .modal-checkbox-label .modal-label-part{
     color: #4d5ae5;
 }
 
+.input-modal:focus~.svg-modal {
+    fill: #4d5ae5;
+}
