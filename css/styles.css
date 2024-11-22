@@ -722,6 +722,6 @@ input[type="checkbox"]:checked + .modal-checkbox-label .modal-label-part{
     color: #4d5ae5;
 }
 
-.input-modal:focus~.svg-modal {
+.modal-form-input:focus~.modal-form-icon{
     fill: #4d5ae5;
 }
