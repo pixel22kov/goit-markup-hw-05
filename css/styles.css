@@ -656,7 +656,7 @@ ol {
     border-color: #4d5ae5;
 }
 
-.modal-form-input:focus + .modal-form-icon{
+.modal-form-input:focus~.modal-form-icon{
     fill: #4d5ae5;
 }
 
@@ -722,6 +722,3 @@ input[type="checkbox"]:checked + .modal-checkbox-label .modal-label-part{
     color: #4d5ae5;
 }
 
-.modal-form-input:focus~.modal-form-icon{
-    fill: #4d5ae5;
-}
