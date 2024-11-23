@@ -656,7 +656,7 @@ ol {
     border-color: #4d5ae5;
 }
 
-.modal-form-input:focus~.modal-form-icon{
+.modal-form-input:focus + .modal-form-icon{
     fill: #4d5ae5;
 }
 
@@ -696,6 +696,7 @@ ol {
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
+
 .modal-label-part{
     width: 16px;
     height: 16px;
@@ -711,11 +712,12 @@ ol {
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type="checkbox"]:checked + .modal-checkbox-label .modal-label-part{
+.modal-checkbox-input:checked + .modal-checkbox-label .modal-label-part{
     border: none;
     background-color: #404bbf;
     fill: #F4F4FD;
 }
+
 .modal-check-link{
     line-height: 1.33;
     text-decoration: underline;
